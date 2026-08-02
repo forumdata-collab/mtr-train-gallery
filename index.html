@@ -82,7 +82,15 @@ footer .grid-2 { gap: 32px; }
 html { scroll-behavior: smooth; }
 @media print { .nav { display: none; } }
 </style>
-</head>
+
+    <style>
+      #backToTop{position:fixed;bottom:24px;right:24px;width:52px;height:52px;border-radius:50%;
+        background:#e60012;color:#fff;border:none;font-size:22px;cursor:pointer;z-index:9999;
+        box-shadow:0 4px 12px rgba(0,0,0,.3);display:none;transition:opacity .3s,transform .3s;}
+      #backToTop:hover{transform:translateY(-3px);}
+      #backToTop.show{display:block;}
+    </style>
+    </head>
 <body>
 <div class="container">
 <header>
@@ -148,7 +156,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/images/mtr_original_1979.png" alt="地鐵列車 (1979-2001)" class="train-img">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/images/mtr_original_1979.png" alt="地鐵列車 (1979-2001)" loading="lazy" class="train-img">
       <div class="specs">
         <div class="spec-box"><div class="val">80</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.0</div><div class="label">加速度 m/s²</div></div>
@@ -172,7 +180,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <div class="train-img-row"><img src="https://img.hermesagent.de5.net/mtr-v3/images/kcr_yellow_head.png" alt="九廣鐵路列車 (1982-1999)"></div>
+      <div class="train-img-row"><img src="https://img.hermesagent.de5.net/mtr-v3/images/kcr_yellow_head.png" alt="九廣鐵路列車 (1982-1999)" loading="lazy"></div>
       <div class="specs">
         <div class="spec-box"><div class="val">120</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">0.7</div><div class="label">加速度 m/s²</div></div>
@@ -196,7 +204,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/images/mlr_gd.jpg" alt="東鐵綫中期翻新列車 (MLR)" class="train-img">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/images/mlr_gd.jpg" alt="東鐵綫中期翻新列車 (MLR)" loading="lazy" class="train-img">
       <div class="specs">
         <div class="spec-box"><div class="val">120</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">0.7</div><div class="label">加速度 m/s²</div></div>
@@ -220,7 +228,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/images/m_train_gd.jpg" alt="市區綫現代化列車" class="train-img">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/images/m_train_gd.jpg" alt="市區綫現代化列車" loading="lazy" class="train-img">
       <div class="specs">
         <div class="spec-box"><div class="val">80</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.0</div><div class="label">加速度 m/s²</div></div>
@@ -244,7 +252,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <div class="train-img-row"><img src="https://img.hermesagent.de5.net/mtr-v3/images/tcl_gd1.jpg" alt="東涌綫列車"><img src="https://img.hermesagent.de5.net/mtr-v3/images/tcl_gd2.jpg" alt="東涌綫列車"></div>
+      <div class="train-img-row"><img src="https://img.hermesagent.de5.net/mtr-v3/images/tcl_gd1.jpg" alt="東涌綫列車" loading="lazy"><img src="https://img.hermesagent.de5.net/mtr-v3/images/tcl_gd2.jpg" alt="東涌綫列車" loading="lazy"></div>
       <div class="specs">
         <div class="spec-box"><div class="val">135</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.0</div><div class="label">加速度 m/s²</div></div>
@@ -268,7 +276,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/images/ael_exterior.jpg" alt="機場快綫列車" class="train-img">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/images/ael_exterior.jpg" alt="機場快綫列車" loading="lazy" class="train-img">
       <div class="specs">
         <div class="spec-box"><div class="val">135</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.0</div><div class="label">加速度 m/s²</div></div>
@@ -292,7 +300,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/images/sp1900_exterior.jpg" alt="日製列車 (SP1900/SP1950/KRS)" class="train-img">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/images/sp1900_exterior.jpg" alt="日製列車 (SP1900/SP1950/KRS)" loading="lazy" class="train-img">
       <div class="specs">
         <div class="spec-box"><div class="val">130</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.0</div><div class="label">加速度 m/s²</div></div>
@@ -316,11 +324,11 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/images/url_k_train.png" alt="市區綫韓國製列車 (K-Train)" class="train-img">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/images/url_k_train.png" alt="市區綫韓國製列車 (K-Train)" loading="lazy" class="train-img">
       <div class="specs">
         <div class="spec-box"><div class="val">80</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.0</div><div class="label">加速度 m/s²</div></div>
-        <div class="spec-box"><div class="val">1.4</div><div class="label">減速度 m/s²</div></div>
+        <div class="spec-box"><div class="val">1.35</div><div class="label">減速度 m/s²</div></div>
         <div class="spec-box"><div class="val">8卡</div><div class="label">編組</div></div>
         <div class="spec-box"><div class="val">1500V DC</div><div class="label">供電</div></div>
         <div class="spec-box"><div class="val">營運中</div><div class="label">狀態</div></div>
@@ -340,7 +348,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/images/disney_exterior.jpg" alt="迪士尼綫列車" class="train-img">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/images/disney_exterior.jpg" alt="迪士尼綫列車" loading="lazy" class="train-img">
       <div class="specs">
         <div class="spec-box"><div class="val">80</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.0</div><div class="label">加速度 m/s²</div></div>
@@ -364,11 +372,11 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/images/tcl_ktrain.jpg" alt="東涌綫韓國製列車 (K-Train)" class="train-img">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/images/tcl_ktrain.jpg" alt="東涌綫韓國製列車 (K-Train)" loading="lazy" class="train-img">
       <div class="specs">
         <div class="spec-box"><div class="val">135</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.3</div><div class="label">加速度 m/s²</div></div>
-        <div class="spec-box"><div class="val">1.4</div><div class="label">減速度 m/s²</div></div>
+        <div class="spec-box"><div class="val">1.35</div><div class="label">減速度 m/s²</div></div>
         <div class="spec-box"><div class="val">8卡</div><div class="label">編組</div></div>
         <div class="spec-box"><div class="val">1500V DC</div><div class="label">供電</div></div>
         <div class="spec-box"><div class="val">營運中</div><div class="label">狀態</div></div>
@@ -388,7 +396,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/images/c_train_gd.jpg" alt="市區綫中國製列車 (C-Train)" class="train-img">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/images/c_train_gd.jpg" alt="市區綫中國製列車 (C-Train)" loading="lazy" class="train-img">
       <div class="specs">
         <div class="spec-box"><div class="val">80</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.3</div><div class="label">加速度 m/s²</div></div>
@@ -412,7 +420,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/images/s_train.jpg" alt="南港島綫東段中國製列車" class="train-img">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/images/s_train.jpg" alt="南港島綫東段中國製列車" loading="lazy" class="train-img">
       <div class="specs">
         <div class="spec-box"><div class="val">80</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.3</div><div class="label">加速度 m/s²</div></div>
@@ -436,7 +444,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/images/tml_ctrain_gd.jpg" alt="屯馬綫中國製列車 (TML C-Train)" class="train-img">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/images/tml_ctrain_gd.jpg" alt="屯馬綫中國製列車 (TML C-Train)" loading="lazy" class="train-img">
       <div class="specs">
         <div class="spec-box"><div class="val">130</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.0</div><div class="label">加速度 m/s²</div></div>
@@ -460,7 +468,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <div class="train-img-row"><img src="https://img.hermesagent.de5.net/mtr-v3/images/eal_r_train.png" alt="東鐵綫韓國製列車 (R-Train)"><img src="https://img.hermesagent.de5.net/mtr-v3/images/eal_r_train_detail.png" alt="東鐵綫韓國製列車 (R-Train)"></div>
+      <div class="train-img-row"><img src="https://img.hermesagent.de5.net/mtr-v3/images/eal_r_train.png" alt="東鐵綫韓國製列車 (R-Train)" loading="lazy"><img src="https://img.hermesagent.de5.net/mtr-v3/images/eal_r_train_detail.png" alt="東鐵綫韓國製列車 (R-Train)" loading="lazy"></div>
       <div class="specs">
         <div class="spec-box"><div class="val">120</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.0</div><div class="label">加速度 m/s²</div></div>
@@ -484,7 +492,7 @@ html { scroll-behavior: smooth; }
       </div>
     </div>
     <div class="train-body">
-      <div class="train-img-row"><img src="https://img.hermesagent.de5.net/mtr-v3/images/q_train.png" alt="市區綫中國青島製列車 (Q-Train)"><img src="https://img.hermesagent.de5.net/mtr-v3/images/q_train_new.jpg" alt="市區綫中國青島製列車 (Q-Train)"></div>
+      <div class="train-img-row"><img src="https://img.hermesagent.de5.net/mtr-v3/images/q_train.png" alt="市區綫中國青島製列車 (Q-Train)" loading="lazy"><img src="https://img.hermesagent.de5.net/mtr-v3/images/q_train_new.jpg" alt="市區綫中國青島製列車 (Q-Train)" loading="lazy"></div>
       <div class="specs">
         <div class="spec-box"><div class="val">80</div><div class="label">最高速度 km/h</div></div>
         <div class="spec-box"><div class="val">1.3</div><div class="label">加速度 m/s²</div></div>
@@ -681,16 +689,16 @@ html { scroll-behavior: smooth; }
   <h2 class="section-title stem"><span class="badge badge-stem">圖表</span>SVG 向量圖表</h2>
   <p style="color:var(--text3);margin-bottom:16px;font-size:14px;">以下圖表以 SVG 向量格式輸出，可無限放大而不失真，文字可被搜尋引擎索引，適合印刷及網頁展示。</p>
   <div class="chart-container">
-    <img src="https://img.hermesagent.de5.net/mtr-v3/charts/chart1_stem_specs.svg" alt="港鐵列車 STEM 技術規格比較">
+    <img src="https://img.hermesagent.de5.net/mtr-v3/charts/chart1_stem_specs.svg" alt="港鐵列車 STEM 技術規格比較" loading="lazy">
     <div class="chart-caption">圖 1：港鐵列車 STEM 技術規格比較（最高速度、加速度/減速度、車廂長度、總載客量）</div>
   </div>
   <div class="grid-2">
     <div class="chart-container">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/charts/chart2_origin_power.svg" alt="產地分布與供電系統分析">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/charts/chart2_origin_power.svg" alt="產地分布與供電系統分析" loading="lazy">
       <div class="chart-caption">圖 2：製造產地分布與供電系統分類</div>
     </div>
     <div class="chart-container">
-      <img src="https://img.hermesagent.de5.net/mtr-v3/charts/chart3_timeline.svg" alt="港鐵列車發展時間線">
+      <img src="https://img.hermesagent.de5.net/mtr-v3/charts/chart3_timeline.svg" alt="港鐵列車發展時間線" loading="lazy">
       <div class="chart-caption">圖 3：港鐵列車發展時間線（1979-2022）</div>
     </div>
   </div>
@@ -706,7 +714,6 @@ html { scroll-behavior: smooth; }
       <p>列車照片由本專頁提供（部分為原創拍攝）。</p>
       <p><strong>圖表製作：</strong>由本專頁根據 HKRail.NET 數據以 Python/matplotlib 製作，輸出為 SVG 向量格式。</p>
     </div>
-    </div>
   </div>
   <div class="credit-bar">
     <p>本專頁為教育用途製作，適合個人學習及非商業轉存使用 | 製作日期：2026年8月</p>
@@ -715,5 +722,14 @@ html { scroll-behavior: smooth; }
 </footer>
 
 </div>
-</body>
+
+    <button id="backToTop" aria-label="返回頂部" title="返回頂部">▲</button>
+    <script>
+      const btt = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        btt.classList.toggle('show', window.scrollY > 600);
+      }, {passive:true});
+      btt.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+    </script>
+    </body>
 </html>
